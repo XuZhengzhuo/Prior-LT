@@ -14,7 +14,7 @@ This is the PyTorch implementation of our [paper](https://openreview.net/forum?i
 To train the model, please select a config file path or customize by yourself. For example:
 
 ```powershell
-python train.py ./config/cifar10_100.py
+python train.py config/cifar10_100.py
 ```
 The result will be saved in `./result`.
 
