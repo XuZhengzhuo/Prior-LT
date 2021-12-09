@@ -41,12 +41,12 @@ The result will be saved in `./result`.
 Welcome to cite:
 ```bib
 @inproceedings{
-xu2021towards,
-title={Towards Calibrated Model for Long-Tailed Visual Recognition from Prior Perspective},
-author={Zhengzhuo Xu and Zenghao Chai and Chun Yuan},
-booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
-year={2021},
-url={https://openreview.net/forum?id=vqzAfN-BoA_}
+    xu2021towards,
+    title={Towards Calibrated Model for Long-Tailed Visual Recognition from Prior Perspective},
+    author={Zhengzhuo Xu and Zenghao Chai and Chun Yuan},
+    booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+    year={2021},
+    url={https://openreview.net/forum?id=vqzAfN-BoA_}
 }
 ```
 
