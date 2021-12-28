@@ -180,9 +180,12 @@ def main_worker(logger, model_dir, cfg):
         criterion = nn.CrossEntropyLoss(weight=per_cls_weights).cuda(cfg.gpu)
 
     elif cfg.loss_type == 'Bayias':
-        criterion = Bayias_compensated_loss(train_cls_num_list=cls_num_list,
+        cls_nl = cfg.train_cls_num_list
+        inf_ld = cfg.inf_label_distribution
+        weight = None
+        criterion = Bayias_compensated_loss(train_cls_num_list=cls_nl,
                                             inf_lable_distrbution=inf_ld,
-                                            weight=None).cuda(cfg.gpu)
+                                            weight=weight).cuda(cfg.gpu)
 
     else:
         warnings.warn('Loss type is not listed')
